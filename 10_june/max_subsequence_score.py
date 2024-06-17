@@ -24,22 +24,22 @@ class Solution:
     #     return pairs
 
     def maxScore(self, nums1: List[int], nums2: List[int], k: int) -> int:
-        max = 0
+        mx = 0
         lef = self.custom_dynamic_pairs(nums1, k)
         right = self.custom_dynamic_pairs(nums2, k)
 
         for u, v in zip(lef, right):
-            sum = 0
-            min = v[0]
+            s = 0
+            mn = v[0]
             for i in u:
-                sum += i
+                s += i
             for j in v:
-                if min > j:
-                    min = j
-            v = sum*min
-            if v > max:
-                max = v
-        return max
+                if mn > j:
+                    mn = j
+            v = s*mn
+            if v > mx:
+                mx = v
+        return mx
 
 
 if __name__ == '__main__':

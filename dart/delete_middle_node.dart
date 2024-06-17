@@ -1,5 +1,3 @@
-import 'dart:developer';
-
 class Solution {
   ListNode? deleteMiddle(ListNode? head) {
     List<int> list = [];
