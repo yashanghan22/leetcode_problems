@@ -18,11 +18,13 @@ class Solution:
                     # print(text1[i])
                     seq.append(text1[i])
                     print(seq)
+                    break
         # print(seq)
         return len(seq)
 
 
 if __name__ == '__main__':
     solution = Solution()
-    long = solution.longestCommonSubsequence('abcde', 'ace')
+    long = solution.longestCommonSubsequence('ezupkr', 'ubmrapg')
+    # long = solution.longestCommonSubsequence('abcde', 'ace')
     print(long)
